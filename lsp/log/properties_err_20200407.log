@@ -1,0 +1,61 @@
+abr 07, 2020 7:41:06 PM com.redhat.quarkus.ls.QuarkusLanguageServer initialize
+INFORMAÇÕES: Initializing Quarkus server 0.0.4-20191120-1547 with C:\Users\c.gomes.da.silva\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\193.6911.18\jbr
+abr 07, 2020 7:41:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+ADVERTÊNCIA: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didChange",
+  "params": {
+    "textDocument": {
+      "version": 1,
+      "uri": "file:///C:/Users/c.gomes.da.silva/Documents/GitHub/Quarkus-Examples/hello-resource/src/main/resources/application.properties"
+    },
+    "contentChanges": [
+      {
+        "range": {
+          "start": {
+            "line": 1,
+            "character": 13
+          },
+          "end": {
+            "line": 1,
+            "character": 13
+          }
+        },
+        "rangeLength": 0,
+        "text": "\n"
+      }
+    ]
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at com.redhat.quarkus.ls.commons.ParentProcessWatcher.lambda$apply$0(ParentProcessWatcher.java:140)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 12 more
+Caused by: java.lang.NullPointerException
+	at com.redhat.quarkus.ls.QuarkusTextDocumentService.triggerValidationFor(QuarkusTextDocumentService.java:262)
+	at com.redhat.quarkus.ls.QuarkusTextDocumentService.didChange(QuarkusTextDocumentService.java:114)
+	... 17 more
+
+abr 07, 2020 7:57:00 PM com.redhat.quarkus.ls.QuarkusLanguageServer initialize
+INFORMAÇÕES: Initializing Quarkus server 0.0.4-20191120-1547 with C:\Users\c.gomes.da.silva\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\193.6911.18\jbr
+abr 07, 2020 7:58:59 PM com.redhat.quarkus.ls.QuarkusLanguageServer initialize
+INFORMAÇÕES: Initializing Quarkus server 0.0.4-20191120-1547 with C:\Users\c.gomes.da.silva\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\193.6911.18\jbr
+abr 07, 2020 8:01:07 PM com.redhat.quarkus.ls.QuarkusLanguageServer initialize
+INFORMAÇÕES: Initializing Quarkus server 0.0.4-20191120-1547 with C:\Users\c.gomes.da.silva\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\193.6911.18\jbr
